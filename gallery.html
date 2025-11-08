@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Fjalla+One&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Comfortaa", sans-serif;
+      background-color: #f6f8c9;
+      padding: 20px;
+    }
+
+    h2, h4 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Gallery layout */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .gallery-item {
+      position: relative;
+      width: calc(25% - 10px);
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    /* Overlay effect — slide up */
+    .overlay {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.3rem;
+      transition: bottom 0.4s ease;
+    }
+
+    .gallery-item:hover .overlay {
+      bottom: 0;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .gallery-item {
+        width: calc(33.33% - 10px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery-item {
+        width: calc(50% - 10px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-item {
+        width: 100%;
+      }
+    }
+    .gallery-item img {
+  width: 100%;
+  height: 250px; /* 👈 set the desired fixed height */
+  object-fit: cover; /* keeps aspect ratio but crops edges if needed */
+  display: block;
+  border-radius: 8px;
+}
+
+  </style>
+</head>
+
+<body>
+  <h2 styl>Responsive Image Gallery</h2>
+  <h4>Hover to see the slide-up overlay effect</h4>
+
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://plus.unsplash.com/premium_photo-1688645554172-d3aef5f837ce?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnQlMjBldmVyZXN0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000" alt="Cinque Terre">
+      <div class="overlay">Timeless Mount Everst</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mount_Abu.jpg/250px-Mount_Abu.jpg" alt="Green Forest">
+      <div class="overlay">Mt. Abu</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1572782252655-9c8771392601?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2FoeWFkcml8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000" width="50px" height="30px" alt="Northern Lights">
+      <div class="overlay">Mighty Sahyadri Ranges</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://img.freepik.com/free-photo/landscape-view-himalayan-mountain-ranges-clear-sky-background_181624-37478.jpg?semt=ais_hybrid&w=740&q=80" width="50px" height="30px" alt="Northern Lights">
+      <div class="overlay">Majestic Kanchenjunga Ranges</div>
+    </div>
+    <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://plus.unsplash.com/premium_photo-1688645554172-d3aef5f837ce?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnQlMjBldmVyZXN0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000" alt="Cinque Terre">
+      <div class="overlay">Timeless Mount Everst</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mount_Abu.jpg/250px-Mount_Abu.jpg" alt="Green Forest">
+      <div class="overlay">Mt. Abu</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1572782252655-9c8771392601?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2FoeWFkcml8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000" width="50px" height="30px" alt="Northern Lights">
+      <div class="overlay">Mighty Sahyadri Ranges</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://img.freepik.com/free-photo/landscape-view-himalayan-mountain-ranges-clear-sky-background_181624-37478.jpg?semt=ais_hybrid&w=740&q=80" width="50px" height="30px" alt="Northern Lights">
+      <div class="overlay">Majestic Kanchenjunga Ranges</div>
+    </div>
+    <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://plus.unsplash.com/premium_photo-1688645554172-d3aef5f837ce?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnQlMjBldmVyZXN0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000" alt="Cinque Terre">
+      <div class="overlay">Timeless Mount Everst</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mount_Abu.jpg/250px-Mount_Abu.jpg" alt="Green Forest">
+      <div class="overlay">Mt. Abu</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1572782252655-9c8771392601?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2FoeWFkcml8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000" width="50px" height="30px" alt="Northern Lights">
+      <div class="overlay">Mighty Sahyadri Ranges</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://img.freepik.com/free-photo/landscape-view-himalayan-mountain-ranges-clear-sky-background_181624-37478.jpg?semt=ais_hybrid&w=740&q=80" width="50px" height="30px" alt="Northern Lights">
+      <div class="overlay">Majestic Kanchenjunga Ranges</div>
+    </div>
+    <!-- <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://plus.unsplash.com/premium_photo-1688645554172-d3aef5f837ce?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW91bnQlMjBldmVyZXN0fGVufDB8fDB8fHww&fm=jpg&q=60&w=3000" alt="Cinque Terre">
+      <div class="overlay">Timeless Mount Everst</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mount_Abu.jpg/250px-Mount_Abu.jpg" alt="Green Forest">
+      <div class="overlay">Mt. Abu</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1572782252655-9c8771392601?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2FoeWFkcml8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000" width="50px" height="30px" alt="Northern Lights">
+      <div class="overlay">Mighty Sahyadri Ranges</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://img.freepik.com/free-photo/landscape-view-himalayan-mountain-ranges-clear-sky-background_181624-37478.jpg?semt=ais_hybrid&w=740&q=80" width="50px" height="30px" alt="Northern Lights">
+      <div class="overlay">Majestic Kanchenjunga Ranges</div>
+    </div>
+     -->
+
+
+    
+  </div>
+</body>
+</html>

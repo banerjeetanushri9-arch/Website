@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0%;
+            padding: 0%;
+            font-family: "Comfortaa", sans-serif;
+        }
+        /* .comfortaa{
+         font-family: "Comfortaa", sans-serif;
+         font-optical-sizing: auto;
+         font-weight:weight;
+         font-style: normal;
+         } */
+        .header{
+
+        }
+       
+        .background-image {
+            width: 100%;
+            height: 500px;
+            /* background-image: url('https://plus.unsplash.com/premium_photo-1677002240252-af3f88114efc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGlraW5nfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000'); */
+            /* background-repeat: no-repeat;
+            background-size: contain; */
+            border: 0px solid red;
+            border-radius:0px;
+            padding:0px;
+            filter: brightness(70%) 
+        }
+        nav{
+            display:flex;
+            padding:2% 6%;
+            justify-content: space-between;
+            align-items:center;
+        }
+        .nav-links{
+            flex:1;
+            text-align:right;
+        }
+        .nav-links{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position:relative;
+        }
+        /* .nav-links ul li{
+            color:antiquewhite;
+            text-decoration: none;
+            font-size: 13px; }*/
+            .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #2d4739, #4f7942);
+  padding: 0.8rem 2rem;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffff1a;
+  border-bottom: 2px solid #ffffff;
+}
+
+.nav-links ul li::after{
+    content:'';
+    height:2px;
+    width:0%;
+    background: #ffffff;
+    display:block;
+    margin:auto;
+    transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    background: #2d4739;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+  } 
+
+  .nav-links.active {
+    height: 220px;
+    padding: 10px 0;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+}
+
+  /* .menu-toggle {
+    display: flex;
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+} */
+ .centered{
+  color: white;
+  width:90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+ }
+ .centered h1{
+    font-size: 62px;
+    margin-bottom: 20px;
+ }
+ .centered p{
+    color: #ffff1a;
+ }
+ .hero_btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 34px;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background 0.3s, color 0.3s;
+ }
+  .hero_btn:hover {
+    border: 2px solid ;
+    background: wheat;
+    transition: 0.5s;
+    color: cadetblue;
+
+  }
+  .about{
+    width: 80%;
+    margin:;
+    text-align:right;
+    padding-top:100px;
+    margin-right: 60px;
+
+  }
+  .abpot h1{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4f7942;
+  }
+  .about p{
+    color:brown;
+    font-size: 18px;
+    line-height:22px;
+    font-weight: 300;
+    padding:10px;
+
+}
+.image-text-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: #f5f9f6;
+  gap: 40px;
+}
+
+/* Image side */
+.image-container img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 80px;
+  border: 5px solid #4f7942;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Text side */
+.text-container {
+  max-width: 500px;
+}
+
+.text-container h2 {
+  font-size: 2rem;
+  color: #2d4739;
+  margin-bottom: 15px;
+}
+
+.text-container p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #e37f22;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #2d4739;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .image-text-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container img {
+    width: 100%;
+  }
+}
+ body {
+  background: #f3f6f4;
+  color: #2d4739;
+}
+
+.gallery-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Horizontal Scroll Container */
+.polaroid-gallery {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for cleaner look */
+.polaroid-gallery::-webkit-scrollbar {
+  display: none;
+}
+.polaroid-gallery {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Polaroid Card Style */
+.polaroid {
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px 10px 25px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  flex: 0 0 auto;
+  width: 220px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.polaroid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.polaroid p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Hover Effect */
+.polaroid:hover {
+  transform: rotate(-3deg) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.trail-finder {
+  text-align: center;
+  padding: 60px 20px;
+  background: #eaf2ec;
+}
+
+.trail-finder h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.trail-finder p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+#openMapBtn {
+  background: #4f7942;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#openMapBtn:hover {
+  background: #2d4739;
+}
+ /* 🌄 Community Section */
+.community-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: #eaf2ec;
+}
+
+.community-content {
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.community-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.community-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.join-btn {
+  background: #4f7942;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.join-btn:hover {
+  background: #2d4739;
+}
+
+/* 🏞️ Carousel */
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0 20px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card Style */
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  min-width: 250px;
+  max-width: 280px;
+  padding: 20px;
+  flex: 0 0 auto;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1rem;
+  color: #2d4739;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+/* body {
+  background: #000000;
+  color: #4a936c;
+}
+
+/* Header */
+/* .blog-section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom right, #eaf2ec, #ffffff);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #2d4739;
+} */
+
+/* .blog-header p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 50px;
+}
+
+/* Grid Layout */
+/* .blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+} */
+
+/* Blog Items - No Box Borders */
+/* .blog-item {
+  position: relative;
+  text-align: left;
+  transition: transform 0.4s ease;
+} */
+
+/* .blog-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+} */
+
+/* .blog-item:hover img {
+  transform: scale(1.05);
+} */ */
+
+/* Floating text overlay */
+/* .blog-info {
+  margin-top: -40px;
+  background: rgb(233, 233, 233);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 20px 25px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.blog-info h3 {
+  font-size: 1.2rem;
+  color: #2d4739;
+  margin-bottom: 8px;
+}
+
+.blog-info p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #4f7942;
+  font-weight: 600;
+  transition: color 0.3s ease;
+} */
+
+/* .read-more:hover {
+  color: #2d4739;
+} */
+
+/* CTA Button */
+/* .blog-button {
+  margin-top: 60px;
+}
+
+.read-blog-btn {
+  background: #4f7942;
+  color: #fff;
+  border: none;
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(79, 121, 66, 0.3);
+}
+
+.read-blog-btn:hover {
+  background: #2d4739;
+  transform: translateY(-2px);
+}  */
+body {
+  background: #f5f9f6;
+  color: #2d4739;
+}
+
+/* Header */
+.blog-section {
+  padding: 80px 20px;
+  background: linear-gradient(to bottom right, #eaf2ec, #ffffff);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-header h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #2d4739;
+}
+
+.blog-header p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 50px;
+}
+
+/* Grid Layout */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Blog Items - No Box Borders */
+.blog-item {
+  position: relative;
+  text-align: left;
+  transition: transform 0.4s ease;
+}
+
+.blog-item img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+}
+
+.blog-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Floating text overlay */
+.blog-info {
+  margin-top: -40px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 20px 25px;
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.blog-info h3 {
+  font-size: 1.2rem;
+  color: #2d4739;
+  margin-bottom: 8px;
+}
+
+.blog-info p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #1b550d;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  
+  
+}
+
+.read-more:hover {
+  color: #fa2263;
+}
+
+/* CTA Button */
+.blog-button {
+  margin-top: 60px;
+}
+
+.read-blog-btn {
+  background: #4f7942;
+  color: #fff;
+  border: none;
+  padding: 14px 35px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(79, 121, 66, 0.3);
+}
+
+.read-blog-btn:hover {
+  background: #2d4739;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-info {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .blog-item img {
+    height: 220px;
+  }
+
+  .blog-header h2 {
+    font-size: 1.8rem;
+  }
+
+}
+.blog{
+    border-left: 2px solid grey;
+    text-align:center;
+}
+/* Section Base */
+.gear-section {
+  padding: 100px 20px;
+  background: #F5EEDC; /* Sand Beige */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.gear-header h2 {
+  font-size: 2.3rem;
+  color: #556B2F; /* Olive Green */
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.gear-header h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #D9784F; /* Rust Orange */
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.gear-header p {
+  color: #2D2D2D; /* Charcoal */
+  font-size: 1.05rem;
+  max-width: 650px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+/* Gear Cards Grid */
+.gear-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+/* Boxed Cards */
+.gear-card {
+  background: #ffffff; /* White boxes */
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #C7E6A3; /* Light Green border */
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.3s ease;
+}
+
+.gear-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.gear-card h3 {
+  color: #556B2F; /* Olive Green */
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.gear-card p {
+  color: #2D2D2D; /* Charcoal */
+  font-size: 0.95rem;
+}
+
+/* Hover Effect on Boxes */
+.gear-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  border-color: #D9784F; /* Rust Orange on hover */
+}
+
+.gear-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Button */
+.gear-button {
+  text-align: center;
+}
+
+.shop-gear-btn {
+  background: #D9784F; /* Rust Orange */
+  color: #fff;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(217,120,79,0.4);
+}
+
+.shop-gear-btn:hover {
+  background: #556B2F; /* Olive Green */
+  color: #F5EEDC; /* Sand Beige */
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .gear-card img{
+    height: 150px;
+  }
+  .gear-header h2{
+    font-size: 1.8rem;
+  }
+}
+/* Call-to-Action Section */
+.cta-section {
+  background: linear-gradient(135deg, #556B2F, #9DC183); /* Olive to Pista green gradient */
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  border-radius: 30px;
+  margin: 50px 0;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+/* Button */
+.cta-btn {
+  background: #FFB347; /* warm yellow-orange for contrast */
+  color: #2D2D2D; /* dark text for readability */
+  font-size: 1.1rem;
+  padding: 18px 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.cta-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+  background: #FFD66B; /* lighter yellow on hover */
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+  .cta-content p {
+    font-size: 1rem;
+  }
+  .cta-btn {
+    padding: 15px 40px;
+    font-size: 1rem;
+  }
+}
+/* Newsletter Section */
+.newsletter-section {
+  background: #a5e4cd; /* Sand Beige background */
+  padding: 100px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 0px;
+  margin: 50px 0;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.newsletter-content h2 {
+  font-size: 2.2rem;
+  color: #556B2F; /* Olive Green */
+  margin-bottom: 15px;
+}
+
+.newsletter-content p {
+  color: #2D2D2D; /* Charcoal */
+  font-size: 1.1rem;
+  max-width: 650px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+  padding: 15px 20px;
+  border: 2px solid #fea31c; /* Light Green border */
+  border-radius: 30px;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 250px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.newsletter-form input[type="email"]:focus {
+  border-color: #D9784F; /* Rust Orange on focus */
+}
+
+/* Subscribe Button */
+.newsletter-form button {
+  padding: 15px 35px;
+  background: #D9784F; /* Rust Orange */
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.newsletter-form button:hover {
+  background: #556B2F; /* Olive Green on hover */
+  color: #F5EEDC; /* Sand Beige text */
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .newsletter-content h2 {
+    font-size: 1.8rem;
+  }
+  .newsletter-content p {
+    font-size: 1rem;
+  }
+  .newsletter-form input[type="email"] {
+    min-width: 100%;
+  }
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+.stats-section {
+  display: flex;
+  justify-content: space-around; /* spread evenly */
+  align-items: center;
+  flex-wrap: wrap; /* wrap on smaller screens */
+  background: #f6feee; /* Sand Beige */
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 20px;
+  gap: 30px; /* spacing between items */
+}
+
+.stat h2 {
+  font-size: 2rem;
+  color: #0a0d06; /* Olive Green */
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #2D2D2D; /* Charcoal */
+  line-height: 1.4;
+}
+
+/* Responsive for mobile */
+@media(max-width:768px){
+  .stats-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .stat h2 {
+    font-size: 1.8rem;
+  }
+  .stat p {
+    font-size: 0.95rem;
+  }
+}
+/* Hero Section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 550px; /* Full screen height */
+  background: url('https://images.unsplash.com/photo-1605446994677-9b99e0d6647f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8') center/cover no-repeat; /* Replace with your image path */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  
+}
+
+.hero-overlay {
+  /* background-color: rgba(224, 224, 224, 0.5); Dark overlay for better text contrast */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  text-align:left;
+  color: #fff783;
+  max-width: 700px;
+  margin-right:600px;
+}
+
+.hero-content h1 {
+    color: black;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+}
+
+/* CTA Button */
+.hero-content .cta-btn {
+  background: #D9784F; /* Rust Orange */
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 18px 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.hero-content .cta-btn:hover {
+  transform: translateY(-5px);
+  background: #FFB347; /* Lighter shade on hover */
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .hero-content .cta-btn {
+    padding: 15px 35px;
+    font-size: 1rem;
+  }
+}
+/* Scrollable Images Section */
+.scrolling-images {
+  padding: 40px 20px;
+  background: #F5EEDC;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.image-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start; /* Align captions */
+}
+
+.image-item {
+  flex: 0 0 auto;
+  text-align: center; /* Center image and caption */
+}
+
+.image-item img {
+  width: 200px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid #556B2F;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.image-item img:hover {
+  transform: scale(1.1);
+}
+
+/* Caption */
+.image-item .caption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #2D2D2D;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  .image-item img {
+    width: 90px;
+    height: 90px;
+  }
+  .image-item .caption {
+    font-size: 0.85rem;
+  }
+}
+ /* Footer Base */
+.footer {
+  background: linear-gradient(180deg, #2D2D2D, #1E1E1E);
+  color: #F5EEDC;
+  padding: 80px 20px 40px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Branding / Tagline */
+.footer-branding {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.footer-branding h2 {
+  color: #C7E6A3; /* Light Green */
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.footer-branding .tagline {
+  font-style: italic;
+  color: #9DC183; /* Pista Green */
+  font-size: 1rem;
+}
+
+/* Footer Link Grid */
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-column h3 {
+  color: #D9784F; /* Rust Orange */
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #F5EEDC;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #C7E6A3; /* Light green hover */
+}
+
+/* Follow Us */
+.footer-follow {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-follow h3 {
+  color: #D9784F;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1); /* White icons */
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+/* Bottom Line */
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 20px;
+  font-size: 0.9rem;
+  color: #BFBFBF;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+  .footer-branding h2 {
+    font-size: 1.6rem;
+  }
+  .footer-column h3 {
+    font-size: 1rem;
+  }
+  .footer-column ul li a {
+    font-size: 0.9rem;
+  }
+}
+/* Sign In Button */
+.nav-btn .signin-btn {
+  background-color: #D9784F; /* Rust orange */
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.nav-btn .signin-btn:hover {
+  background-color: #C7E6A3; /* Light green hover */
+  color: #2D2D2D;
+  transform: translateY(-2px);
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <!-- <section class="header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links">
+                <ul>
+                    <li class="nav-links" style="color:antiquewhite; text-decoration:none;
+            font-size:13px;"><a href="index.html">HOME</a></li>
+                    <li class="nav-links"><a href="project1.html">ABOUT</a></li>
+                    <li class="nav-links"><a href="project2.html">EXPLORE</a></li>
+                    <li class="nav-links"><a href="project3.html">CONTACT</a></li>
+            
+                    
+                </ul>
+            </div>
+
+        </nav> -->
+    <header class="navbar">
+    <div class="logo">
+      <img src="https://img.freepik.com/premium-vector/simple-mountain-logo-design_272293-765.jpg" alt="Mountain Logo" />
+      <h1><span style="color:rgb(246, 255, 186); font-weight:600;">ᴛʜᴇ ᴀsᴄᴇɴᴛ</span> <span style=" color: rgb(0, 217, 255);">A</span><span style=" color: rgb(255, 255, 255);">T</span><span style=" color: rgb(255, 0, 0);">L</span><span style=" color: rgb(4, 233, 12);">A</span><span style="color: rgb(255, 255, 0);">S</span></h1>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/sample2.html">Events</a></li>
+        <li><a href="http://127.0.0.1:5500/gallery.html">Gallery</a></li>
+        <li><a href="#">Bookings</a></li>
+        <li><a href="http://127.0.0.1:5500/forms.html">Contact</a></li>
+      </ul>
+      <div class="nav-btn">
+      <a href="#" class="signin-btn">Sign In</a>
+    </div>
+    </nav>
+    <!-- <div class="menu-toggle">
+      <span></span><span></span><span></span>
+    </div> -->
+  </header>
+
+    </section>
+    <section>
+    </div>
+    <div>
+    <img class="background-image" src="https://plus.unsplash.com/premium_photo-1677002240252-af3f88114efc?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aGlraW5nfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000" alt="Sun image"> 
+    <div class="centered">
+        <h1>Escape the <strong>Ordinary</strong></h1>
+        <p>Trade city noise for the whisper of pines and the crunch of fresh trails. <br>
+            The mountains are calling — will you <span style="color:chartreuse; font-weight: bold;">answer?</span></p>
+            
+    <a href="" class="hero_btn">Plan Your Trail</a>
+    </div> 
+    </div>
+    </section>
+    <!-- <section class="about">
+        <h1>About</h1>
+        <p> At The Ascent Atlas, we believe that every trail tells a story.
+        Our mission is to inspire explorers of all levels to step into the wild, discover new horizons, and connect deeply with the mountains.
+        From local forest walks to alpine ascents, we curate detailed trail guides, maps, and real hiker experiences to help you make every adventure unforgettable.</p>
+    </section> -->
+    <section class="image-text-section">
+    <div class="image-container">
+      <img src="https://plus.unsplash.com/premium_photo-1661883853185-165f5869e6d3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aGlraW5nfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000" alt="Mountain View">
+    </div>
+
+    <div class="text-container">
+      <h2><u>About</u></h2>
+      <p>
+        At The Ascent Atlas, we believe that every trail tells a story.
+        Our mission is to inspire explorers of all levels to step into the wild, discover new horizons, and connect deeply with the mountains.
+        From local forest walks to alpine ascents, we curate detailed trail guides, maps, and real hiker experiences to help you make every adventure unforgettable.
+      </p>
+      <a href="#" class="btn" style="background-color: #556B2F;">Learn More About Us</a>
+    </div>
+  </section>
+  <section class="trail-finder">
+    <h2>Find Trails Near You</h2>
+    <p>Looking for your next hike? Use our interactive map to explore trails by region, difficulty, or scenery.
+     Whether you’re after waterfalls, forest paths, or snowy summits — we’ll guide you there.</p>
+    <a href="#" class="btn">Open Trail Map</a>
+  </section>
+  
+
+  <section class="gallery-section">
+    <h2>Explore Popular Trails</h2>
+    <p>Handpicked routes from around the world — tested, loved, and shared by real hikers.</p>
+    <div class="polaroid-gallery">
+      <div class="polaroid">
+        <img src="https://images.prismic.io/elite-exped/b4d85354-c868-45dd-9e5e-66559e8a9a50_Everest+Base+camp.jpg?auto=format&rect=0,0,3000,2000&w=1200&h=800&dpr=1.5" alt="Mountain Trail">
+        <p>Everest Base Camp Trek (Nepal)</p>
+      </div>
+
+      <div class="polaroid">
+        <img src="https://adventure-pulse.com/wp-content/uploads/2024/03/4-1.jpg" alt="Lake View">
+        <p>Annapurna Base Camp Trek (Nepal)</p>
+      </div>
+
+      <div class="polaroid">
+        <img src="https://www.trekupindia.com/wp-content/uploads/2024/06/markha-valley-and-kang-yatse-min.jpg" alt="Forest Path">
+        <p>Markha Valley Trek (India)</p>
+      </div>
+
+      <div class="polaroid">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Camino-inca-dia2-c01.jpg/250px-Camino-inca-dia2-c01.jpg" alt="Snow Peak">
+        <p>Inca Trail (Peru)</p>
+      </div>
+
+      <div class="polaroid">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Emerald_Lakes_-_panoramio_%281%29.jpg/1200px-Emerald_Lakes_-_panoramio_%281%29.jpg" alt="Sunrise Trail">
+        <p>Tongariro Alpine Crossing (New Zealand)</p>
+      </div>
+       <div class="polaroid">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Mt.Yarigatake_from_Enzansou.jpg" alt="Sunrise Trail">
+        <p>Mount Yari(Japan)</p>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="trail-finder">
+    <h2>Find Trails Near You</h2>
+    <p>Looking for your next hike? Use our interactive map to explore trails by region, difficulty, or scenery.
+     Whether you’re after waterfalls, forest paths, or snowy summits — we’ll guide you there.</p>
+    <a href="#" class="btn">Open Trail Map</a>
+  </section> -->
+  <section class="community-section">
+    <div class="community-content">
+      <h2><span style="font-family:Arial, Helvetica, sans-serif;">Join the </span>Trail Community</h2>
+      <p>
+        Connect with fellow hikers, share your favorite trails, upload photos, and swap tips.<br>
+        The Ascent Atlas community is built by explorers who believe that the best journeys are shared.
+      </p>
+      <button class="join-btn">Join the Journey</button>
+    </div>
+
+    <!-- 🏞️ Carousel -->
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuvwJG3J0AvDmbaE8_obrEW5IHHEB2zDaYEw&s" alt="Hiker 1">
+          <h3>“Found my favorite trail through this community!”</h3>
+          <p>- Sarah, Colorado</p>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnSA1zygA3rubv-VK0DrVcQ02Po79kJhXo_A&s" alt="Hiker 2">
+          <h3>“Love sharing my summit photos and tips!”</h3>
+          <p>- Daniel, Oregon</p>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuvwJG3J0AvDmbaE8_obrEW5IHHEB2zDaYEw&s" alt="Hiker 3">
+          <h3>“The best place to connect with real adventurers.”</h3>
+          <p>- Maya, Montana</p>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnSA1zygA3rubv-VK0DrVcQ02Po79kJhXo_A&s" alt="Hiker 4">
+          <h3>“I discovered hidden trails I never knew existed!”</h3>
+          <p>- Liam, Washington</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="scrolling-images">
+  <div class="image-row">
+    <div class="image-item">
+      <img src="images/trail1.jpg" alt="Trail 1">
+      <p class="caption">Trail 1</p>
+    </div>
+    <div class="image-item">
+      <img src="images/trail2.jpg" alt="Trail 2">
+      <p class="caption">Trail 2</p>
+    </div>
+    <div class="image-item">
+      <img src="images/trail3.jpg" alt="Trail 3">
+      <p class="caption">Trail 3</p>
+    </div>
+    <div class="image-item">
+      <img src="images/trail4.jpg" alt="Trail 4">
+      <p class="caption">Trail 4</p>
+    </div>
+    <div class="image-item">
+      <img src="images/trail5.jpg" alt="Trail 5">
+      <p class="caption">Trail 5</p>
+    </div>
+  </div>
+</section> -->
+  
+  <section class="gear-section">
+  <div class="gear-header">
+    <h2>Gear Up for the Trail</h2>
+    <p>Explore our trusted partners and gear recommendations for every kind of adventure.
+    From sturdy boots to weather-proof backpacks, we help you prepare for every climb.</p>
+  </div>
+
+  <div class="gear-cards">
+    <div class="gear-card">
+      <img src="https://www.shutterstock.com/image-photo/hiking-boot-female-legs-leather-600nw-2200678719.jpg" alt="Sturdy Hiking Boots">
+      <h3>Hiking Boots</h3>
+      <p>Durable, waterproof, and built for any terrain.</p>
+    </div>
+    <div class="gear-card">
+      <img src="https://img.freepik.com/free-psd/durable-orange-gray-hiking-backpack-ideal-adventures_191095-90935.jpg?semt=ais_hybrid&w=740&q=80" alt="Weather-proof Backpack">
+      <h3>Backpacks</h3>
+      <p>Lightweight, spacious, and weather-resistant for long treks.</p>
+    </div>
+    <div class="gear-card">
+      <img src="https://img.freepik.com/free-photo/young-woman-demonstrating-upper-cloths_1303-24503.jpg?semt=ais_hybrid&w=740&q=80" alt="Outdoor Jackets">
+      <h3>Outdoor Jackets</h3>
+      <p>Stay warm and dry with our recommended jackets.</p>
+    </div>
+    <div class="gear-card">
+      <img src="https://www.shutterstock.com/image-photo/backpack-tripod-hiking-pole-during-600nw-2461555553.jpg" alt="Adventure Gear">
+      <h3>Adventure Gear</h3>
+      <p>Essentials from trekking poles to hydration packs.</p>
+    </div>
+  </div>
+
+  <div class="gear-button">
+    <button class="shop-gear-btn">Shop Recommended Gear</button>
+  </div>
+</section>
+  <section class="blog-section">
+    <div class="blog-header">
+      <h2>Trail Tips & Hiking Guides</h2>
+      <p>Expert advice, gear reviews, and stories from the trail.</p>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="blog-grid">
+      <div class="blog-card">
+       
+        <div class="blog-content">
+          <div class="blog">
+          <h3 style="color:#C66C3D;">10 Essential Items for Every <u>Mountain Hike</u></h3>
+          <p style="font-style: italic;">Pack smart and stay safe — here’s what every hiker should have before heading out.</p>
+          <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card">
+       <div class="blog">
+
+        <div class="blog-content">
+          <h3 style="color:#C66C3D; text-align: center;">How to Read a Topographic Map Efficiently</h3>
+          <p style="font-style: italic;">Learn to navigate confidently with contour lines, elevation marks, and trail symbols.</p>
+          <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card">
+       <div class="blog">
+        <div class="blog-content">
+          <h3 style="color:#C66C3D;">Staying Safe in High-Altitude Conditions</h3>
+          <p style="font-style: italic;">Understand altitude sickness and how to prepare for climbs above 8,000 feet.</p>
+          <a href="#" class="read-more">Read More →</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="blog-button">
+      <button class="read-blog-btn">Read the Blog</button>
+    </div>
+  </section>
+  
+  <!-- <section class="gear-section">
+  <div class="gear-header">
+    <h2>Gear Up for the Trail</h2>
+    <p>Explore our trusted partners and gear recommendations for every kind of adventure.
+    From sturdy boots to weather-proof backpacks, we help you prepare for every climb.</p>
+  </div>
+
+  <div class="gear-cards">
+    <div class="gear-card">
+      <img src="images/boots.jpg" alt="Sturdy Hiking Boots">
+      <h3>Hiking Boots</h3>
+      <p>Durable, waterproof, and built for any terrain.</p>
+    </div>
+    <div class="gear-card">
+      <img src="images/backpack.jpg" alt="Weather-proof Backpack">
+      <h3>Backpacks</h3>
+      <p>Lightweight, spacious, and weather-resistant for long treks.</p>
+    </div>
+    <div class="gear-card">
+      <img src="images/jacket.jpg" alt="Outdoor Jackets">
+      <h3>Outdoor Jackets</h3>
+      <p>Stay warm and dry with our recommended jackets.</p>
+    </div>
+    <div class="gear-card">
+      <img src="images/gear.jpg" alt="Adventure Gear">
+      <h3>Adventure Gear</h3>
+      <p>Essentials from trekking poles to hydration packs.</p>
+    </div>
+  </div>
+
+  <div class="gear-button">
+    <button class="shop-gear-btn">Shop Recommended Gear</button>
+  </div>
+</section> -->
+<section class="hero-section">
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Adventure Awaits — Are You Ready?</h1>
+      <p style="color:rgb(0, 52, 69)">Every mountain holds a new story.<br>
+      Take the first step, breathe the wild air,<br>and discover your next unforgettable journey<br> with The Ascent Atlas.</p>
+      <button class="cta-btn">Start Exploring Trails</button>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="cta-section">
+  <div class="cta-content">
+    <h2>Adventure Awaits — Are You Ready?</h2>
+    <p>Every mountain holds a new story.<br>
+    Take the first step, breathe the wild air, and discover your next unforgettable journey with The Ascent Atlas.</p>
+    <button class="cta-btn">Start Exploring Trails</button>
+  </div>
+</section> -->
+<section class="follow">
+
+</section>
+<section class="stats-section">
+  <div class="stat">
+    <h2>450K+</h2>
+    <p>fellow members</p>
+  </div>
+  <div class="stat">
+    <h2>1,200K+</h2>
+    <p>Trails Explored</p>
+  </div>
+  <div class="stat">
+    <h2>150K+</h2>
+    <p>Regions Covered</p>
+  </div>
+  
+  </div>
+</section>
+<section class="newsletter-section">
+  <div class="newsletter-content">
+    <h2 style="color: #C66C3D;">Stay on the Trail with Us</h2>
+    <p>Get the latest trail updates, hiking tips, and exclusive guides delivered straight to your inbox.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe Now</button>
+    </form>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Branding / Tagline -->
+    <div class="footer-branding">
+      <h2>The Ascent Atlas</h2>
+      <p class="tagline">“Every peak begins with a single step — The Ascent Atlas.”</p>
+    </div>
+
+    <!-- Footer Link Columns -->
+    <div class="footer-links">
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#">Countries</a></li>
+          <li><a href="#">Regions</a></li>
+          <li><a href="#">Cities</a></li>
+          <li><a href="#">Parks</a></li>
+          <li><a href="#">Trails</a></li>
+          <li><a href="#">Points of Interest</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Trail Features</h3>
+        <ul>
+          <li><a href="#">Custom Routes & Maps</a></li>
+          <li><a href="#">Build Custom Route</a></li>
+          <li><a href="#">Beta</a></li>
+          <li><a href="#">Print Maps</a></li>
+          <li><a href="#">Route Converter</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Ambassadors</a></li>
+          <li><a href="#">Affiliates</a></li>
+          <li><a href="#">Influencers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Trails</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Follow Us Section -->
+    <div class="footer-follow">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a >Facebook</a>
+        <a >Twitter</a>
+        <a >Instagram</a>
+        <a >YouTube</a>
+      </div>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="footer-bottom">
+      <p>© 2025 The Ascent Atlas. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+</body>
+</html>
