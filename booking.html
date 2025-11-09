@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: rgb(241, 231, 187);
+}
+
+/* Header */
+.hero {
+    background :url('https://plus.unsplash.com/premium_photo-1661878091370-4ccb8763756a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2hlcnJ5JTIwYmxvc3NvbXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000')center/cover no-repeat;
+    filter: brightness(100%);
+    color:white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Booking form section */
+.booking-form {
+    background-color:rgb(240, 206, 235);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.booking-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2e3d2f;
+}
+
+/* Form fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+/* Button styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4490fc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1d4796;
+    color: white;
+    margin-top: 60px;
+    font-size: 0.9rem;
+}
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ascent Atlas | Mountain Trail Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <h1>Ascent Atlas</h1>
+        <p>Book your next mountain adventure today</p>
+    </header>
+
+    <section class="booking-form">
+        <h2>Trail Booking Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="trail">Select Trail</label>
+                <select id="trail" name="trail" required>
+                    <option value="">-- Choose a Trail --</option>
+                    <option value="evercrest">Evercrest Peak</option>
+                    <option value="mount-solis">Mount Solis</option>
+                    <option value="ridgeview">Ridgeview Pass</option>
+                    <option value="crystal-trail">Crystal Trail</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="group">Group Size</label>
+                <input type="number" id="group" name="group" min="1" max="15" required>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Special Requests</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Any dietary restrictions or requests..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Ascent Atlas. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+</body>
+</html>
